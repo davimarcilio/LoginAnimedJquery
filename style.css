@@ -11,6 +11,7 @@
     height: 100vmin;
     justify-content: center;
     align-items: center;
+    /* background-color: gray; */
     flex-direction: row;
 }
 .containercadas{
@@ -22,7 +23,8 @@
     align-items: center;
     width: 500px;
     height: 400px;
-    background-color: aqua;
+    background-color: rgb(0, 184, 184);
+    border-radius: 20px;
 }
 .containerlogin{
     display: flex;
@@ -34,8 +36,11 @@
     justify-content: center;
     align-items: center;
 }
-.formtype{
+.formtype, .formtype1{
     padding: 7px;
+    margin: 10px;
+}
+.formtype1{ 
     margin: 10px;
 }
 button{
@@ -43,6 +48,7 @@ button{
     border-radius: 10px;
     padding: 25px;
     width: 100px;
+    
     background-color: rgb(197, 166, 255);
     font-weight: 900;
     transition: all .5s;
@@ -53,4 +59,10 @@ button:hover{
 }
 .cadas{
     display: none;
+}
+.backgroudcontainer{
+    width: 1000px;
+    background-color: gray;
+    height: 400px;
+    border-radius: 20px;
 }
