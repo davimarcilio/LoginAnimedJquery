@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 *{
     margin: 0;
     padding: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
 }
 .container{
     width: 1000px;
@@ -26,6 +30,16 @@
     background-color: rgb(0, 184, 184);
     border-radius: 20px;
 }
+.cadastrarcontainer{
+    display: flex;
+    position: absolute;
+    right: 0;
+    width: 500px;
+    height: 400px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .containerlogin{
     display: flex;
     position: absolute;
@@ -43,13 +57,22 @@
 .formtype1{ 
     margin: 10px;
 }
+input{
+    border: unset;
+    border-radius: 5px;
+}
+input:focus{
+    outline: none;
+    border: unset;
+}
 button{
     border: none;
     border-radius: 10px;
     padding: 25px;
     width: 100px;
-    
-    background-color: rgb(197, 166, 255);
+    border: solid 3px rgb(10, 0, 27);
+    background-color: transparent; 
+    /* background-color: rgb(197, 166, 255); */
     font-weight: 900;
     transition: all .5s;
     cursor: pointer;
@@ -58,11 +81,25 @@ button:hover{
     background-color: rgb(226, 183, 255);
 }
 .cadas{
-    display: none;
+    display: block;
+    margin: 5px;
 }
 .backgroudcontainer{
     width: 1000px;
     background-color: gray;
     height: 400px;
     border-radius: 20px;
+}
+.password{
+    position: relative;
+}
+.iconeye{
+    position: absolute;
+    width: 30px;
+    right: 12px;
+    height: 100%;
+    cursor: pointer;
+}
+.slash{
+    display: none;
 }

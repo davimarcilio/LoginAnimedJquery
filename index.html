@@ -13,20 +13,38 @@
     <div class="container">
         <div class="backgroudcontainer"></div>
         <div class="containerlogin">
-            <input id="login" class="formtype" type="text" placeholder="login">
-            <input id="senhalg" class="formtype" type="text" placeholder="senha">
+            <input id="login" class="formtype" type="text" placeholder="Login">
+            <div class="password">
+                <img class="iconeye non" src="img/eye-svgrepo-com (1).svg" alt="eye">
+                <img class="iconeye slash" src="img/eye-slash-fill-svgrepo-com.svg" alt="slash eye">
+                <input id="senhalg" class="formtype pass" type="password" placeholder="Senha"> 
+            </div>
+            
             <button id="bttentrar" class="formtype">Entrar</button>
+          
+        </div>
+        <div class="cadastrarcontainer">
             <input id="nome" class="formtype cadas" type="text" placeholder="Nome">
             <input id="sobrenome" class="formtype cadas" type="text" placeholder="Sobrenome">
             <input id="usuario" class="formtype cadas" type="text" placeholder="Usuário">
-            <input id="email" class="formtype cadas" type="text" placeholder="Email">
-            <input id="confemail" class="formtype cadas" type="text" placeholder="Confirme Email">
-            <input id="senhacd" class="formtype cadas" type="text" placeholder="Senha">
-            <input id="confsenha" class="formtype cadas" type="text" placeholder="Confirme Senha">
+            <input id="email" class="formtype cadas" type="email" placeholder="Email">
+            <input id="confemail" class="formtype cadas" type="email" placeholder="Confirme Email">
+            <div class="password">
+                <img onclick="" class="iconeye non" src="img/eye-svgrepo-com (1).svg" alt="eye">
+                <img class="iconeye slash" src="img/eye-slash-fill-svgrepo-com.svg" alt="slash eye">
+                <input id="senhacd" class="formtype cadas pass" type="password" placeholder="Senha">
+                
+            </div>
+            <div class="password">
+                <img class="iconeye non" src="img/eye-svgrepo-com (1).svg" alt="eye">
+                <img class="iconeye slash" src="img/eye-slash-fill-svgrepo-com.svg" alt="slash eye">
+                <input id="confsenha" class="formtype cadas pass" type="password" placeholder="Confirme Senha">
+                
+            </div>
             <button class="formtype cadas" id="bttcadastrar">Cadastrar</button>
         </div>
         <div class="containercadas">
-            <h1 id="h1cadas" class="formtype1">Não possuo conta</h1>
+            <h1 id="h1cadas" class="formtype">Não possuo conta</h1>
             <button data-action="cadastro" class="formtype1" id="cadastrobtt">Cadastro</button>
         </div>
     </div>
