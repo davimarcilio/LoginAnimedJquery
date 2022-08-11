@@ -25,14 +25,13 @@ $('#cadastrobtt').click(() => {
         })
     }
 })
-
-$('.non').click(()=>{
+$('.non').click(() => {
     $('.non').hide()
     $('.slash').show()
     $('.pass').attr('type', 'text')
 })
-$('.slash').click(()=>{
-   $('.non').show()
-   $('.slash').hide()
-   $('.pass').attr('type', 'password')
+$('.slash').click(() => {
+    $('.non').show()
+    $('.slash').hide()
+    $('.pass').attr('type', 'password')
 })
