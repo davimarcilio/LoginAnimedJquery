@@ -25,13 +25,13 @@ $('#cadastrobtt').click(() => {
         })
     }
 })
-$('.non').click(() => {
-    $('.non').hide()
-    $('.slash').show()
-    $('.pass').attr('type', 'text')
+$('.non').click((non) => {
+    $(non.target).hide()
+    $(non.target).next('.slash').show()
+    $(non.target).nextAll('input').attr('type', 'text')
 })
-$('.slash').click(() => {
-    $('.non').show()
-    $('.slash').hide()
-    $('.pass').attr('type', 'password')
+$('.slash').click((slash) => {
+    $(slash.target).prev('.non').show()
+    $(slash.target).hide()
+    $(slash.target).nextAll('input').attr('type', 'password')
 })
